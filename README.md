@@ -1,0 +1,2 @@
+# Generator
+Генератор на python
