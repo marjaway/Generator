@@ -22,12 +22,18 @@
 
 Установка ( Termux )
 
-pkg install python
-pip install faker
-pip install colorama
-pip install g4f
-git clone https://github.com/marjaway/Generator
-cd Generator
-python main.py
+**pkg install python**
+
+**pip install faker**
+
+**pip install colorama**
+
+**pip install g4f**
+
+**git clone https://github.com/marjaway/Generator**
+
+**cd Generator**
+
+**python main.py**
 
 discord/tg: @marjaway
