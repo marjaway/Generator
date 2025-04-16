@@ -17,4 +17,17 @@
 15. Генератор анекдотов
 16. пока нету
 
+
+-------------------
+
+Установка ( Termux )
+
+pkg install python
+pip install faker
+pip install colorama
+pip install g4f
+git clone https://github.com/marjaway/Generator
+cd Generator
+python main.py
+
 discord/tg: @marjaway
