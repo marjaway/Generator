@@ -36,4 +36,5 @@
 
 **python main.py**
 
-discord/tg: @marjaway
+
+Связь: discord/tg: @marjaway
