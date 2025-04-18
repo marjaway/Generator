@@ -35,6 +35,3 @@
 **cd Generator**
 
 **python main.py**
-
-
-Связь: discord/tg: @marjaway
