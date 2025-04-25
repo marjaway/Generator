@@ -16,7 +16,7 @@
 14. Генератор профессий
 15. Генератор анекдотов
 16. ChatGPT 
-
+17. Генератор QR-кодов
 
 -------------------
 
@@ -29,6 +29,8 @@
 **pip install colorama**
 
 **pip install g4f**
+
+**pip install segno**
 
 **git clone https://github.com/marjaway/Generator**
 
