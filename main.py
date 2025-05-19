@@ -5,8 +5,9 @@ import time
 import g4f
 import segno
 import banner
+from person import *
 from colorama import init
-from colorama import Fore, Back, Style
+from colorama import Fore
 init()
 
 
@@ -17,17 +18,21 @@ faker = Faker("RU_ru")
 
 def main():
     input(Fore.RESET + "\nНажмите Enter, чтобы вернуться в меню...")
-				  
+
+
+def fors():
+    pass
+
 
 while True:
     banner.banner()
 
-    command = input(Fore.CYAN + "					[ ? ] -> Введите число: " + Fore.RESET)
+    command = input(Fore.CYAN + "\n                                          [ ? ] -> Введите число: " + Fore.RESET)
     print("\n")
 
     if command == "1":
         print('''	Автор | tg: @marjaway / discord: marjaway
-	Версия софта -> 0.2.0
+	Версия софта -> 0.2.2
 	Автор не несёт ответственность за эту программу :). Всё что генерирует программа это вымошленно!''')
         news = input("\nПосмотреть историю обновлений (Напиши update): ")
         time.sleep(0.1)
@@ -46,7 +51,8 @@ while True:
         0.1.8 - Добавление загрузки при заходе в программу / Изменён порядок функций / Генератор анекдотов
         0.1.9 - Добавлен ChatGPT
         0.2.0 - Добавлен Генератор QR-кодов / Добавлены новые блоки функций
-        0.2.1 - Переделан Генартор QR-кодов / Интерфейс перенесен в другой файл''')
+        0.2.1 - Переделан Генартор QR-кодов / Интерфейс перенесен в другой файл
+        0.2.2 - Добавлен Генератор дат / Генератор решений ( Да, Нет, Возможно ) / Генератор персонажей ( все есть в person.py ) / Генератор NFT-названий''')
 
         main()
         
@@ -262,7 +268,7 @@ while True:
 
     elif command == "16":
         print("Привет, расскажи какой-нибудь анекдот\n")
-        def ask_gpt(promt:str)->str:
+        def ask_gpt(promt:str) -> str:
             responce = g4f.ChatCompletion.create(
                 model=g4f.models.gpt_4,
                 messages=[{"role": "user", "content": promt}],
@@ -314,6 +320,51 @@ while True:
 
 
     elif command == "19":
+        print("Генерация разных дат\n")
+
+        years = random.randint(1, 2025)
+        month = random.randint(1, 12)
+        day = random.randint(1, 31)
+        hour = random.randint(1, 24)
+
+        print(f"Год - {years}\nМесяц - {month}\nДень - {day}\nЧас - {hour}")
+        time.sleep(0.3)
+
+        main()
+
+
+    elif command == "20":
+        while True:
+            reshenie = ['Да', 'Нет', 'Наверное']
+            dsn = random.choices(reshenie)
+            print(dsn)
+
+            input("\nЕще сгенерировать?")
+            a = input("\nНапите exit если хотите выйти ( если не хотите выходить, то нажмите Enter): ")
+            if a == "exit":
+                break
+
+
+    elif command == "21":
+        random_person = int(input("Сколько нужно: "))
+        random_person = int(random_person)
+        for i in range(random_person):
+            random_person = random.choices(list)
+            print(random_person)
+            time.sleep(0.1)
+        main()
+
+
+    elif command == "22":
+            nft_random = int(input("Количество: "))
+            nft_random = int(nft_random)
+            for i in range(nft_random):
+                random_nft = random.choices(nft_list)
+                print(random_nft)
+                time.sleep(0.1)
+            main()
+
+    elif command == "23":
         time.sleep(0.1)
         print("Выход из программы...")
         break 
