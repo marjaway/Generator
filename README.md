@@ -31,23 +31,3 @@ banner.py - интерфейс программы
 person.py - база данных
 
 -------------------
-
-Установка/Запуск ( Termux )
-
-**pkg install python**
-
-**pip install faker**
-
-**pip install colorama**
-
-**pip install g4f**
-
-**pip install segno**
-
-**git clone https://github.com/marjaway/Generator**
-
-**cd Generator**
-
-**python main.py** 
-
-``` если что версии могут отличаться, поэтому лучше скачивать и через Download открывать программу ```
