@@ -43,6 +43,6 @@ from colorama import init
 from colorama import Fore
 init()
 ```
-
+___
 
 Связь: [Telegram](https://t.me/marjaway) / Discord: marjaway
