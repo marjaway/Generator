@@ -34,10 +34,12 @@ ___
 ```python
 import random
 import time
+import sys
 import g4f
 import segno
 import banner
-from person import *
+from генератор.bd.person import *
+from генератор.bd.nft_name import *
 from faker import Faker
 from colorama import init
 from colorama import Fore
