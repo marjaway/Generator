@@ -1,13 +1,19 @@
 import random
 import time
-import g4f
-import segno
-import banner
-from person import *
-from faker import Faker
-from colorama import init
-from colorama import Fore
-init()
+import sys
+try:
+    import g4f
+    import segno
+    import banner
+    from генератор.bd.person import *
+    from генератор.bd.nft_name import *
+    from faker import Faker
+    from colorama import init
+    from colorama import Fore
+    init()
+except ModuleNotFoundError as mode:
+    print(f"Не найден модуль {mode}")
+    sys.exit()
 
 faker = Faker("RU_ru")
 
