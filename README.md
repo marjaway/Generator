@@ -49,4 +49,4 @@ ___
 
 Данная программа была сделала в целе познания Python и обновляться в ближайшее время не будет | дата последнего изменения Readme.md - 01.08.2025
 
-Связь: [Telegram](https://t.me/marjaway) / Discord: marjaway 
+Cвязь: Discord: marjaway 
