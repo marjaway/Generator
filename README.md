@@ -48,4 +48,5 @@ init()
 ___
 
 Данная программа была сделала в целе познания Python
+
 Связь: [Telegram](https://t.me/marjaway) / Discord: marjaway
